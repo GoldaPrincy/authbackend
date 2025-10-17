@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
   origin: process.env.FRONTEND_ORIGIN,
-  credentials: true
+  credentials: true,
 }));
 
 app.use('/auth', require('./routes/auth'));
